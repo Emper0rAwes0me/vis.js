@@ -1,64 +1,85 @@
-**ATTENTION: The new version can be found [here](https://github.com/TheNexusAvenger/Monstercat-Audio-Spectrum-Visualizer). This will not be getting updates as the new one is a full rewrite.**
+# Information
+By using this Discord in any way, you agree to follow our rules when interacting with the chat in any way. The server and group rules will be listed below. More importantly, you agree to follow the Discord Community Guidelines (https://discord.com/guidelines) and Terms of Service (https://discord.com/terms) in addition to the Roblox Terms of Service (https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use).
 
-NOTE: This was modified for personal use, however can be used for getting data of audio files.
+# Rules
+Among the things you are agreeing to by following the 3 rule sets above are:
+- **Section 1 - Content**
+- You are at least 13 years of age (as specified by Discord's Terms of Service)
+- You will not post **ANY** NSFW content.
+- You will not post homophobic or racist content, nor use derogatory words **even in a non-derogatory context** relating to such content.
+- You will not post spam, or harass users.
+- You will not share any personal information relating to anyone, even non-members. Do not dox or threaten to share the personal information of another person.
+- You will not distribute malicious files/viruses, "engage in or promote phishing activities", or "threaten another user with digital harm including but not limited to viruses, hacking, and spying."
+- You will use channels for their intended purposes. (i.e. <#1199023885996261396> for using bot commands)
+- You will keep politics and disputes for DMs and other places which may be more appropriate.
+- You will not attempt to bypass any filters that are in place.
+- You will not use an alternative account in any circumstance.
+- You will not use self-bots for any reason.
+- You will not ask anyone for free ranks.
 
-Viewing:
-<br>(Development) https://rawgit.com/TheNexusAvenger/vis.js/gh-pages/index.html
-<br>(Production) https://cdn.rawgit.com/TheNexusAvenger/vis.js/gh-pages/index.html
+**Section 2 - Endorsements & Advertisements**
+- You will not encourage, promote, or glorify software hacking, exploiting, or other malicious digital activity.
+- You will not encourage, promote, or glorify the sale/trade/distribution of stolen assets.
+- You will not advertise other groups or servers. This includes within this Discord as well as DMs.
 
-# vis.js (TheNexusAvenger's Modifications)
+- **Section 3 - Events**
+- You will not exploit/cheat at events.
+- You will not be toxic to your team or the opposing team at any time during events.
+- You may only play against us during an event if you are a higher rank in the opposing group and are permitted to do so by HR.
 
-vis.js is a modifcation of the [version owned by caseif](https://github.com/caseif/vis.js) for the use of getting sound data for use on ROBLOX. This is a more speicalized version, and you should refer to the original if you are looking at this one.
+- **Section 4 - Voice Channels**
+- All rules still apply when in voice channels.
+- You will not ear-rape.
+- You will not use external/third-party soundboards.
+- You will not abuse Discord's built-in soundboard.
 
-## Re-using for yourself
+- Most importantly, you should use your common sense. If an action sounds wrong or stupid, question if it's acceptable.
 
-If you want to reproduce these files, do the following:
-<br>1. Create a fork of this repositionary
-<br>2. Go into /index.html, replace both cases of TheNexusAvenger (lines 21 and 32) with your GitHub username
-<br>3. Go into /js/util/config.js and replace TheNexusAvenger (line 8) with your GitHub username
-<br>4. Go into /README.MD and replace both case of TheNexusAvenger in the links(lines 4 and 5) with your GitHub username
-<br>5. Keep the reference to the original under caseif. I just modified this, I didn't create it.
+- **Notices**
+- As of right now, those on clanware are not permitted to join the group or attend events.
+- Those present on our blacklist will not be allowed to join the group or attend any of our defences.
 
-Note: This is meant to work with rawgit.com. You may need to modify teh links further in steps 2-4 to work with your domain or changed repositionary name.
+You will be banned from this server and exiled from the group for any notable violation of the above rule sets.
 
-## Song Data Exporting
-The output of this modification is a ModuleScript in a .rbxmx file, which returns a table with each frame sample and an ordered set of the positions of the bars (in practice, the max they reach is ~240-250). This is meant to be directly inserted into Roblox Studio. If you need to change this to another format, the file is created in /js/audio.loader.js, /js/audio/node_helper.js, and /js/visual.js.
+# Enforcement
+- Minor offences will follow a three-strike policy.
+- Disputes will lead to a warning followed up by a timeout if necessary.
+- Attempting to circumvent a ban or moderator action will result in being blacklisted.
+- The three-strike policy may be neglected when deemed necessary.
 
-(Following was not modified as it is still relevant)
-## Browser Support
+# Verification
+- To get started, pend for the group.
+- Use `/verify` and follow the instructions you are DM'd by <@1207118987721183262>
+- If your roles are incorrect, you can use `/updateroles` to retrieve any missing roles. This will only work if you have previously verified.
 
-:heavy_check_mark: Google Chrome
+# Progression
+At the end of every event, attendees will be awarded Lum. The amount varies depending on the outcomes and location:
+- **Fort victory:** 4
+- **Fort loss:** 2
+- **Fairzone victory:** 3
+- **Fairzone loss:** 1
 
-:heavy_check_mark: Microsoft Edge (minor issues but nothing huge)
+You may check how much Lum you or another member has acquired using `/viewlum`.
 
-:warning: Mozilla Firefox (works but sometimes freezes the browser)
+The Lum requirement for each rank is as follows:
+- **Initiate:** 0
+- **Auxiliary:** 25
+- **Guard:** 61
+- **Sentry:** 245
+- **Tactician:** 393
+- **Titan:** 797
 
-:warning: Safari (Safari caps `fftSize` at 2048, resulting in odd/glitchy spectrum behavior)
+The Honorary rank is awarded to those who show notable contributions to the group. It is not easy to obtain.
 
-:x: Microsoft Internet Explorer (no support for the AudioNode API)
+HRs are selected through a combination of applications and Council approval.
+Council members may be appointed at any time. In most cases, this will be an existing HR.
 
-## Common Issues
+# Bots & your data
+The bots running on this server all adhere to the Discord Developer Terms of Service. By using this server, you understand and consent that we store the following things:
+- Your Discord ID, a small string identifying your account, to determine who you are and apply the respective nickname, and roles and store your earned Lum.
+- Logs for moderation, so that we can ensure that all users are following our rules, the Discord Community Guidelines, and the Discord and Terms of Service.
 
-First and foremost, verify that you're using a supported browser as per the above section.
-
-**Spectrum is jittery/choppy**
-
-If the spectrum is jittery even though the framerate isn't dropping, you may need to reconfigure your system's audio settings. vis.js functions best at a sample rate of 44.1kHz. Higher rates may affect the visual quality of the spectrum.
-
-**"Could not get audio context! (Are you using IE?)"**
-
-The audio node could not be initialized because it is not supported by your browser. This is seen most commonly in Internet Explorer, which does not support the Audio API.
-
-**"Could not set optimal fftSize! This may look a bit weird..."**
-
-The audio node was not initialized properly. This might be resolved by using a different browser, although it may be a restriction caused by your system.
-
-**404 in console on local install when loading audio**
-
-vis.js needs a reverse proxy to be configured on the webserver in order to function due to Javascript restrictions. More specifically, `vis.mydomain.com/content/` should point to `docs.google.com`.
-
-## Footnote
-
-See the visualizer in action [here](http://vis.caseif.net/).
-
-Based on [schisma/vis](https://github.com/schisma/vis).
+# Links
+Links to this Discord and our group are as follows:
+- https://www.roblox.com/groups/3357441/Evolution-Resurgence
+- https://discord.gg/JdG74KN2pR
